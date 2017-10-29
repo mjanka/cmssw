@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<DDDefinition xmlns="http://www.cern.ch/cms/DDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cern.ch/cms/DDL ../../../DetectorDescription/Schema/DDLSchema.xsd">
+<ConstantsSection label="cms.xml" eval="true">
+
+<Constant name="CMSZ1" value="[cmsextent:CMSZ1]"/>
+<Constant name="Rmin" value="[cmsextent:Rmin]"/>
+<Constant name="CMSR2" value="[cmsextent:CMSR2]"/>
+<Constant name="HallZ" value="[cmsextent:HallZ]"/>
+<Constant name="HallRMax" value="[cmsextent:HallRMax]"/>
+<Constant name="CMSZ1" value="[cmsextent:CMSZ1]"/>
+</ConstantsSection>
+
+<SolidSection label="cms.xml">
+		<Polycone name="OCMS" startPhi="0*deg" deltaPhi="360*deg">
+			<ZSection z="-[CMSZ1]" rMin="[Rmin]" rMax="[CMSR2]"/>
+			<ZSection z="-[HallZ]" rMin="[Rmin]" rMax="[CMSR2]"/>
+			<ZSection z="-[HallZ]" rMin="[Rmin]" rMax="[HallRMax]"/>
+			<ZSection z="[HallZ]" rMin="[Rmin]" rMax="[HallRMax]"/>
+			<ZSection z="[HallZ]" rMin="[Rmin]" rMax="[CMSR2]"/>
+			<ZSection z="[CMSZ1]" rMin="[Rmin]" rMax="[CMSR2]"/>
+</Polycone>
+</SolidSection> 
+
+<LogicalPartSection label="cms.xml">
+ <LogicalPart name="OCMS" category="unspecified">
+			<rSolid name="OCMS"/>
+			<rMaterial name="materials:Air"/>
+</LogicalPart>
+</LogicalPartSection>
+</DDDefinition>
