@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<DDDefinition xmlns="http://www.cern.ch/cms/DDL" xmlns:xsi="http://www.cern.ch/www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cern.ch/cms/DDL ../../../DetectorDescription/Schema/DDLSchema.xsd">
+
+
+
+<ConstantsSection label="Phase1BPIXLayer4Module_2.xml">
+
+<Constant name="Length" value="53.6*cm"/> 
+<Constant name="Modules" value="8"/> 
+<Constant name="CFStripWidth" value="24.50*mm"/>
+<Constant name="BaseThick" value="0.20*mm"/>
+<Constant name="ROChipThick123" value="0.175*mm"/>
+<Constant name="SensorThick" value="0.285*mm"/>
+<Constant name="HybridThick" value="0.050*mm"/>
+<Constant name="CapacitorStripThick" value="0.50*mm"/> 
+ <Constant name="ModuleCapThick" value="0.070*mm"/>
+
+
+<Constant name="LadderWidth" value="[CFStripWidth]"/>
+<Constant name="ModuleDz" value="[Length]/[Modules]"/>
+<Constant name="Module23Thick"       value="([BaseThick]+[ROChipThick123]+
+           [SensorThick]+[HybridThick]+[CapacitorStripThick]+[ModuleCapThick])"/> 
+</DDDefinition>
