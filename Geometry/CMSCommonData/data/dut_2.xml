@@ -2,17 +2,18 @@
 
 <DDDefinition xmlns="http://www.cern.ch/cms/DDL" xmlns:xsi="http://www.cern.ch/www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cern.ch/cms/DDL ../../../DetectorDescription/Schema/DDLSchema.xsd">
 
-<LogicalPartSection label="DUT.xml">
+<LogicalPartSection label="dut_2.xml">
 
 <LogicalPart name="BModule1Layer6" category="unspecified">
 <rSolid name="DUT:BModule1Layer6"/>
 <rMaterial name="materials_2:Air"/>
 </LogicalPart>
 
-<SolidSection label="DUT.xml">
+<SolidSection label="dut_2.xml">
 
 <Box name="BModule1Layer6" dx="62.5*mm" dy="71.975*mm" dz="1.1*mm"/>
 
 </SolidSection>
 
+</LogicalPartSection>
 </DDDefinition>
