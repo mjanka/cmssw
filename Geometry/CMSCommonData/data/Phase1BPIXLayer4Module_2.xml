@@ -21,4 +21,5 @@
 <Constant name="ModuleDz" value="[Length]/[Modules]"/>
 <Constant name="Module23Thick"       value="([BaseThick]+[ROChipThick123]+
            [SensorThick]+[HybridThick]+[CapacitorStripThick]+[ModuleCapThick])"/> 
+</ConstantsSection>
 </DDDefinition>
