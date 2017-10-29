@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<DDDefinition xmlns="http://www.cern.ch/cms/DDL" xmlns:xsi="http://www.cern.ch/www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.cern.ch/cms/DDL ../../../DetectorDescription/Schema/DDLSchema.xsd">
+
+
+<ConstantsSection label="Phase2BeamTestConstants.xml" eval="true">
+
+<Constant name="Phase1BPIXModuleWidth" value="[Phase1BPIXLayer4Module:LadderWidth]"/>  <!-- = 24.5 mm, sensor active is 16.2 mm for Phase1 -->
+<Constant name="Phase1BPIXModuleLength" value="[Phase1BPIXLayer4Module:ModuleDz]"/>  <!-- = 67.0 mm, sensor active is 64.8 mm for Phase1 -->
+<Constant name="Phase1BPIXModuleThickness" value="[Phase1BPIXLayer4Module:Module23Thick]"/>  <!-- = 1.28 mm, sensor active is 0.285 mm for Phase1 -->
+</ConstantsSection>
+
+
